@@ -3,7 +3,7 @@ name: East Sussex Hotel Bot
 on:
   workflow_dispatch:
   schedule:
-    - cron: '27 19 * * *'
+    - cron: '58 19 * * *'
 
 jobs:
   run-bot:
