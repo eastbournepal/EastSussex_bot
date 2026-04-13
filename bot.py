@@ -2,7 +2,6 @@ import os
 import re
 import time
 import requests
-import schedule
 from datetime import datetime, timedelta
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 
