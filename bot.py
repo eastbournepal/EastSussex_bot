@@ -1,12 +1,13 @@
+import os
 import re
 import time
 import requests
 import schedule
 from datetime import datetime, timedelta
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 
-BOT_TOKEN = "8359105433:AAGpzfG81-3563j5tM9IBS-AX1AQoIpuQzc"
-CHAT_ID = "308473346"
+BOT_TOKEN = os.environ["BOT_TOKEN"]
+CHAT_ID = os.environ["CHAT_ID"]
 
 BOOKING_URL = "https://www.bookin1.com/bookingEngine/hotel/EASTUK/search/list"
 
