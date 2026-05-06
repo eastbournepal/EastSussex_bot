@@ -153,10 +153,10 @@ def check_prices_next_days(days=20):
                 result = search_one_date(page, target_date)
                 results.append(result)
             except Exception as e:
-                print("ERROR:", target_date.strftime("%Y-%m-%d"), e)
+                print("ERROR:", target_date.strftime("%a %d %b"), e)
                 results.append(
                     {
-                        "date": target_date.strftime("%Y-%m-%d"),
+                        "date": target_date.strftime("%a %d %b"),
                         "cheapest_price": None,
                         "cheapest_name": "ERROR",
                     }
