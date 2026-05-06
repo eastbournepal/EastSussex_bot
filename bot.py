@@ -97,7 +97,7 @@ def click_date_if_available(page, target_date):
 
 
 def search_one_date(page, target_date):
-    date_iso = target_date.strftime("%Y-%m-%d")
+    date_iso = target_date.strftime("%a %d %b")
     print("Checking:", date_iso)
 
     page.goto(BOOKING_URL, timeout=90000)
